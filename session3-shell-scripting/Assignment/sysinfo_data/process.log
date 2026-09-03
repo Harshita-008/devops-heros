@@ -1,0 +1,30 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1  24208 15084 ?        Ss   02:59   0:00 /sbin/init
+root           2  0.0  0.0   3172  2208 hvc0     Sl+  02:59   0:00 /init
+root           6  0.0  0.0   3172  2044 hvc0     Sl+  02:59   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          46  0.0  0.2  50380 16844 ?        S<s  02:59   0:00 /usr/lib/systemd/systemd-journald
+systemd+      83  0.0  0.1  22524 14264 ?        Ss   02:59   0:00 /usr/lib/systemd/systemd-resolved
+root          89  0.0  0.1  35196 12024 ?        Ss   02:59   0:02 /usr/lib/systemd/systemd-udevd
+root         159  0.0  0.0   2880  1912 ?        Ss   02:59   0:00 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+root         160  0.0  0.0   4464  3068 ?        Ss   02:59   0:00 /usr/sbin/cron -f -P
+message+     161  0.0  0.0   8780  5232 ?        Ss   02:59   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         165  0.0  0.3  44076 29460 ?        Ss   02:59   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         170  0.0  0.1  18568  9280 ?        Ss   02:59   0:00 /usr/lib/systemd/systemd-logind
+syslog       192  0.0  0.0 220532  5672 ?        Ssl  02:59   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         213  0.0  0.0   5484  2692 tty1     Ss+  02:59   0:00 /usr/sbin/agetty --noreset --noclear --issue-file=/etc/issue:/etc/issue.d:/run/issue.d:/usr/lib/issue.d - linux
+_chrony      222  0.0  0.0  20404  6212 ?        S    02:59   0:00 /usr/sbin/chronyd -n -F 1 -x
+root         225  0.0  0.4 123440 32236 ?        Ssl  02:59   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+_chrony      237  0.0  0.0  12076  2424 ?        S    02:59   0:00 /usr/sbin/chronyd -n -F 1 -x
+root         334  0.0  0.0   8636  5444 ?        Ss   02:59   0:00 login -- harshita
+harshita     377  0.0  0.1  22488 13252 ?        Ss   02:59   0:00 /usr/lib/systemd/systemd --user
+harshita     379  0.0  0.0  22896  4052 ?        S    02:59   0:00 (sd-pam)
+harshita     407  0.0  0.0   6128  5384 pts/1    Ss+  02:59   0:00 -bash
+root         794  0.0  0.0   3180  1124 ?        Ss   03:12   0:00 /init
+root         795  0.0  0.0   3196  1264 ?        S    03:12   0:00 /init
+harshita     796  0.0  0.0   6260  5472 pts/2    Ss   03:12   0:00 -bash
+root        1146  0.0  0.0   8488  5344 ?        Ss   03:18   0:00 login -- root
+root        1190  0.0  0.1  22336 13512 ?        Ss   03:18   0:00 /usr/lib/systemd/systemd --user
+root        1192  0.0  0.0  22900  4032 ?        S    03:18   0:00 (sd-pam)
+root        1218  0.0  0.0   6128  5316 pts/3    Ss+  03:18   0:00 -bash
+harshita    2237  0.0  0.0   4944  3632 pts/2    S+   03:57   0:00 /bin/bash ./system_info.sh
+harshita    2246  0.0  0.0   7156  4304 pts/2    R+   03:58   0:00 ps aux
