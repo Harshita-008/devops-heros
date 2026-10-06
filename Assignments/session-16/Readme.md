@@ -3,6 +3,9 @@
 All workflows were run from a separate repository, `session16-cicd-github-actions`, because GitHub
 only runs workflow files placed in the root `.github/workflows/` folder.
 
+- **Repository:** https://github.com/Harshita-008/session16-cicd-github-actions
+- **Workflow runs:** https://github.com/Harshita-008/session16-cicd-github-actions/actions
+
 ## 1. CI vs CD
 
 | CI (Continuous Integration) | CD (Continuous Delivery / Deployment) |
